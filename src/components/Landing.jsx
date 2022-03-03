@@ -5,17 +5,17 @@ import './Landing.css'
 export default function Landing() {
     return(
         <>        
-            <img src={logo} alt="" />
-            <div className="welcomeinfo">
-                Welcome to ToolShed!
+            <img src={logo} alt="" class="animate pop"/>
+            <div id="welcomeinfo" class="animate pop delay-1">
+                Welcome to ToolShed 
             </div>
-            <div className="welcomeinfo">
-                One stop for all the tools you will ever need
+            <div id="welcomeinfo" class="animate pop delay-2">
+                All the tools you need 
             </div>
-            <div className="welcomeinfo">
-                during Web Development.
+            <div id="welcomeinfo" class="animate pop delay-3">
+                In one place!
             </div>
-            <button>
+            <button class="animate pop delay-4">
                 <Link to='/Tools' class="started"><span class="button-content">
                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 0H24V24H0z" fill="none">
