@@ -1,6 +1,5 @@
 # This website was bundled using Vite
-##Vite: [English](https://vitejs.dev)
-##官方文档地址:[Chinese](https://cn.vitejs.dev)
+Vite Site: [English](https://vitejs.dev)  
 ```shell
 Frameworks supported by Vite:
 >   vanilla
