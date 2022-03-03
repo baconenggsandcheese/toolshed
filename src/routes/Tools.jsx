@@ -1,7 +1,7 @@
-import './LandingPage.css'
+import './Tools.css'
 import { Link } from "react-router-dom";
 
-function LandingPage() {
+export default function Tools() {
     return (
         <div className="main-tp">
         <header>
@@ -87,5 +87,3 @@ function LandingPage() {
         </div>
     )
 }
-
-export default LandingPage

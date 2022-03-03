@@ -1,27 +1,19 @@
 import './Tool_3.css'
-import { Link } from "react-router-dom";
+import Lines from '../components/Lines'
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 export default function Tool_3() {
     return (
-        <div class='mainclass_tool_3'>
-            <header>
-                <logotext>
-                    <Link to='/'>ToolShed</Link>
-                </logotext>
-                <tools>
-                    <Link to='/LandingPage'>Tools</Link>
-                </tools>
-                <about>
-                    <Link to='/About'>About</Link>
-                </about>
-                <hr />
-            </header>
-            <footer>
-                <hr />
-                <info>
-                    MIT Licensed | Copyright © 2022-Present | Aninda Deb
-                </info>
-            </footer>
-        </div>
+        <>
+            <Navbar />
+            <Lines />
+            <div>
+                Tool 3
+            </div>
+            <Lines />
+            <Footer />
+        </>
+
     )
 }

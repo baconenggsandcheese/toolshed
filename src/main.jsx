@@ -8,7 +8,7 @@ import {
   Route
 } from "react-router-dom";
 //Import The Pages you want to go to
-import LandingPage from './routes/LandingPage'
+import Tools from './routes/Tools'
 import Tool_1 from './routes/Tool_1'
 import About from './routes/About'
 import Tool_2 from './routes/Tool_2'
@@ -19,7 +19,7 @@ ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />} />
-      <Route path="landingpage" element={<LandingPage />} />
+      <Route path="tools" element={<Tools />} />
       <Route path="/about" element={<About />} />
       <Route path="/tool_1" element={<Tool_1 />} />
       <Route path="/tool_2" element={<Tool_2 />} />

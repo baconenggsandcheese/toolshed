@@ -1,0 +1,9 @@
+/*Style for the separator lines*/
+hr{
+  width: 100%;
+  background-color: black;
+  border: none;
+  height: 1px;
+  opacity: 15%;
+  box-shadow: 1px;
+}
