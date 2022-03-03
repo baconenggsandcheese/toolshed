@@ -1,6 +1,20 @@
-# This website was bundled using Vite
+# This website is created with *React* and Bundled with *Vite*
+### To get started with the app, clone the repo.
+Then:
+```bash
+cd toolshed
+```
+To install the dependencies use:
+```bash
+npm install
+```
+Then to deploy the server use:
+```bash
+npm run dev
+```
+## More info on Vite:
 Vite Site: [English](https://vitejs.dev)  
-```shell
+```bash
 Frameworks supported by Vite:
 >   vanilla
     vue
@@ -8,11 +22,4 @@ Frameworks supported by Vite:
     preact
     lit
     svelte
-#To get started with the app, clone the repo.
-#Then:
-cd toolshed
-#To install the dependencies use:
-npm install
-#Then to deploy on localhost use:
-npm run dev
 ```
