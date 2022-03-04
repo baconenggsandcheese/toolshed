@@ -16,12 +16,14 @@ export default function Landing() {
                 <strong>In one place!</strong>
             </div>
             <br/>
-            <button class="animate pop delay-4" id='landbutt'>
+            <div class="animate pop delay-4">
+            <button id='landbutt'>
                 <Link to='/Tools' class="started"><span class="button-content">
                     Get Started
                 </span>
                 </Link>
             </button>
+            </div>
             <br/>
             <br/>
         </>

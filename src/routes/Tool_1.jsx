@@ -15,9 +15,7 @@ export default function Tool_1() {
             </div>
             <textarea id="textboxid" Placeholder="Enter Some JSON here..."></textarea>
             <br/>
-            <Link to="/">
             <button>Click Me!</button>
-            </Link>
             <Lines />
             <Footer />
         </>
