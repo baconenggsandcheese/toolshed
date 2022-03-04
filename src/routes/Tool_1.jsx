@@ -2,7 +2,6 @@ import './Tool_1.css'
 import Lines from '../components/Lines'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import { Link } from 'react-router-dom'
 
 export default function Tool_1() {
     return(
