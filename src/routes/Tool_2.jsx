@@ -9,7 +9,7 @@ export default function Tool_2() {
             <Navbar />
             <Lines />
             <div>
-                Tool 2
+                <button>TEST</button>
             </div>
             <Lines />
             <Footer />
