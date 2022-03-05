@@ -1,6 +1,8 @@
 /*Imports*/
 @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 
 /*Section Header*/
 .section-heading {
@@ -13,50 +15,83 @@
 /*Column Section of the tiles*/
 .gallery {
   display: grid;
-  grid-gap: 20px;
-  margin: 20px;
+  grid-gap: 2em;
+  margin: auto;
+  margin-right: 490px;
   border-radius: 30px;
+  padding: 80px;
+  font-family: 'Cartograph CF';
+  width: 700px;
+  backdrop-filter: blur(14px);
+}
+desc{
+  font-family: 'consolas', sans-serif;
 }
 .p1
 {
   color: white;
-  background-color: #102C4E;
+  background-color: #000000a2;
 }
 .p2
 {
   color: white;
-  background-color: #102C4E;
+  background-color: #000000a2;
 }
 .p3
 {
   color: white;
-  background-color: #102C4E;
+  background-color: #000000a2;
 }
 .p4
 {
   color: white;
-  background-color: #102C4E;
+  background-color: #000000a2;
 }
 .p5
 {
   color: white;
-  background-color: #102C4E;
+  background-color: #000000a2;
 }
 .p6
 {
   color: white;
-  background-color: #102C4E;
+  background-color: #000000a2;
 }
 .p7
 {
   color: white;
-  background-color: #102C4E;
+  background-color: #000000a2;
 }
 .p8
 {
   color: white;
-  background-color: #102C4E;
+  background-color: #000000a2;
 }
 .p1:hover{
-  color: pink;
+  color: #f3bc36;
+  background-color: #102C4E;
+}
+.p2:hover{
+  color: #f3bc36;
+  background-color: #102C4E;;
+}
+.p3:hover{
+  color: #f3bc36;
+  background-color: #102C4E;;
+}
+.p4:hover{
+  color: #f3bc36;
+  background-color: #102C4E;;
+}
+.p5:hover{
+  color: #f3bc36;
+  background-color: #102C4E;;
+}
+.p6:hover{
+  color: #f3bc36;
+  background-color: #102C4E;;
+}
+.p7:hover{
+  color:#f3bc36;
+  background-color: #102C4E;;
 }
