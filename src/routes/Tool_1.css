@@ -4,3 +4,13 @@
     width: 700px;
     font-size:14pt;
 }
+
+#json-pretty{
+    text-align: left;
+    color: white;
+    background-color: #000000a2;
+}
+#json-pretty:hover{
+    color:#f3bc36;
+  background-color: #102C4E;
+}
