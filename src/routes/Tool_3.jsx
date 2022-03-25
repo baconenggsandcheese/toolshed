@@ -9,7 +9,7 @@ export default function Tool_3() {
             <Navbar />
             <Lines />
             <div>
-                Tool 3
+                Under Development
             </div>
             <Lines />
             <Footer />
