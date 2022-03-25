@@ -1,4 +1,4 @@
-# This website is created with *React* and Bundled with *Vite*
+# This website is created with *React* and Bundled using *Vite*
 ### To get started with the app, clone the repo.
 Then:
 ```bash
