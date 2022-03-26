@@ -1,5 +1,5 @@
-# This website is created with *React* and Bundled with *Vite*
-### To get started with the app, clone the repo.
+# This website is created with *React* and Bundled using *Vite*
+### To run the project locally, first clone the repo.
 Then:
 ```bash
 cd toolshed
