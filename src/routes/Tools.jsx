@@ -1,10 +1,34 @@
+import React, { useState, useEffect } from 'react';
 import './Tools.css'
 import Lines from '../components/Lines'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { Link } from 'react-router-dom'
 
+function useWindowSize() {
+    const [Size, setSize] = useState([window.innerHeight, window.innerWidth]);
+    useEffect(() => {
+        const handleResize = () => {
+            setSize([window.innerHeight, window.innerWidth]);
+        };
+        window.addEventListener("resize", handleResize);
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+    return Size;
+}
+
 export default function Tools() {
+    const [height, width] = useWindowSize();
+    if (width <= 820) {
+        return (
+            <>
+                <div className="container">Unsupported device</div>
+            </>
+        )
+    }
+    else{
     return (
         <>
         <Navbar/>
@@ -45,4 +69,5 @@ export default function Tools() {
         <Footer/>
         </>
     )
+    }
 }

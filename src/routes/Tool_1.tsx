@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import * as PropTypes from 'prop-types'
 import * as React from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 interface ITheme { [key: string]: string; }
 interface IProps extends React.HTMLAttributes<HTMLElement> {
@@ -95,8 +95,6 @@ class JSONPretty extends React.Component<IProps, {}> {
         };
 
         let obj = data || json;
-
-        // See https://facebook.github.io/react/warnings/unknown-prop.html
         if (typeof obj === 'string') {
             try {
                 obj = JSON.parse(obj);
@@ -153,7 +151,6 @@ class JSONPretty extends React.Component<IProps, {}> {
             .replace(/</g, '&lt;').replace(/>/g, '&gt;')
             .replace(regLine, this._replace.bind(null, theme, styles));
     }
-
     // Formatting Function
     private _replace(theme: ITheme, styles: any, match: any, ind: string, key: string, val: string, tra: string) {
         const spanEnd = '</span>';
@@ -179,6 +176,20 @@ class JSONPretty extends React.Component<IProps, {}> {
     }
 }
 
+function useWindowSize() {
+    const [Size, setSize] = useState([window.innerHeight, window.innerWidth]);
+    useEffect(() => {
+        const handleResize = () => {
+            setSize([window.innerHeight, window.innerWidth]);
+        };
+        window.addEventListener("resize", handleResize);
+        return () => {
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+    return Size;
+}
+
 export default function Tool_2() {
     // Function for I/O
     const [data, setData] = useState(null)
@@ -188,6 +199,15 @@ export default function Tool_2() {
         setPrint(false)
     }
     // End of function
+    const [height, width] = useWindowSize();
+    if (width <= 820) {
+        return (
+            <>
+                <div className="container">Unsupported device</div>
+            </>
+        )
+    }
+    else{
     return (
         <>
             <Navbar />
@@ -195,11 +215,11 @@ export default function Tool_2() {
             <br />
             <h3>Enter Some JSON: </h3>
             <br />
-            <textarea onChange={parse} />
+            <textarea id="textarea" onChange={parse} />
             <br />
             <button onClick={() => setPrint(true)}>Pretty Print</button>
             <br />
-            { /*{ Printing function */
+            { /*Printing function */
                 print ?
                     <>
                         <h3>Prettyfied data: </h3>
@@ -212,4 +232,5 @@ export default function Tool_2() {
             <Footer />
         </>
     )
+    }
 }

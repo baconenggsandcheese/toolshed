@@ -1,8 +1,9 @@
-#textboxid
+#textarea
 {
-    height:250px;
-    width: 700px;
+    height: 35rem;
+    width: 60rem;
     font-size:14pt;
+    resize:none;
 }
 
 #json-pretty{
@@ -12,5 +13,4 @@
 }
 #json-pretty:hover{
     color:#f3bc36;
-  background-color: #102C4E;
 }
