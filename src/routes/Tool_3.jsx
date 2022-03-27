@@ -8,8 +8,9 @@ export default function Tool_3() {
         <>
             <Navbar />
             <Lines />
-            <div>
-                Under Development
+            <div class="mainStyle">
+                <h2>Under Development</h2>
+                <p>Stay tuned</p>
             </div>
             <Lines />
             <Footer />

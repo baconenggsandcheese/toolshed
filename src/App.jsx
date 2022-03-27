@@ -24,7 +24,10 @@ function App() {
 	if(width<=820){
 		return(
 			<>
-				<div className="container">Unsupported device</div>
+				<div class="mobile-message flex flex-column">
+					<h2>Sorry, this app is not supported on Mobile Devices</h2>
+					<p>To use this app, please use a computer or Tablet</p>
+				</div>
 			</>
 		)
 	}
@@ -33,11 +36,11 @@ function App() {
 			<>
 				{/* height:{height}, width:{width}, */}
 				<body>
-					<Navbar />
-					<Lines />
+					{/* <Navbar />
+					<Lines /> */}
 					<Landing />
-					<Lines />
-					<Footer />
+					{/* <Lines />
+					<Footer /> */}
 				</body>
 			</>
 		)

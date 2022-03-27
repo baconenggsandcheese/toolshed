@@ -1,5 +1,5 @@
 import './About.css'
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Lines from '../components/Lines'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
@@ -36,7 +36,6 @@ export default function About() {
                     ![Github Activity](https://activity-graph.herokuapp.com/graph?username=baconenggsandcheese&theme=github&custom_title=Activity)
                 </ReactMarkdown>
             </body>
-            <Lines/>
             <Footer/>
         </>
     );

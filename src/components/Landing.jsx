@@ -10,7 +10,7 @@ export default function Landing() {
                 Welcome to ToolShed 
             </div>
             <div id="welcomeinfo" class="animate pop delay-2">
-                All the tools you need
+                Where you'll find all webtools
             </div>
             <div id="welcomeinfo" class="animate pop delay-3">
                 <strong>In one place!</strong>
