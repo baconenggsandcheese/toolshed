@@ -213,6 +213,7 @@ export default function Tool_2() {
     return (
         <>
             <Navbar />
+            <hr/>
             <br />
             <h3>Enter Some JSON: </h3>
             <br />

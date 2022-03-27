@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './Tools.css'
-import Lines from '../components/Lines'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { Link } from 'react-router-dom'
@@ -35,7 +34,7 @@ export default function Tools() {
     return (
         <>
         <Navbar/>
-        <Lines />
+        <hr/>
         <body>
             <h2 class="section-heading"><strong>Tools of the trade</strong></h2>
             <div class='gallery'>

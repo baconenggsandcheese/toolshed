@@ -1,8 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import './App.css'
-import Lines from './components/Lines'
-import Navbar from './components/Navbar'
-import Footer from './components/Footer'
 import Landing from './components/Landing'
 
 function useWindowSize() {
