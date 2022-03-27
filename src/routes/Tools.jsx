@@ -24,9 +24,9 @@ export default function Tools() {
     if (width <= 820) {
         return (
             <>
-                <div class="mainStyle">
-                    <h2>Under Development</h2>
-                    <p>Stay tuned</p>
+                <div class="mobile-message">
+                    <h2>Sorry, this app is not supported on Mobile Devices</h2>
+                    <p>To use this app, please use a computer or Tablet</p>
                 </div>
             </>
         )

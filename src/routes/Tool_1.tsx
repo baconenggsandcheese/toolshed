@@ -1,5 +1,4 @@
 import './Tool_1.css'
-import Lines from '../components/Lines'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import * as PropTypes from 'prop-types'
@@ -203,7 +202,7 @@ export default function Tool_2() {
     if (width <= 964) {
         return (
             <>
-                <div className="mobile-message flex flex-column">
+                <div className="mobile-message">
                     <h2>Sorry, this app is not supported on Mobile Devices</h2>
                     <p>To use this app, please use a computer or Tablet</p>
                 </div>
@@ -214,7 +213,6 @@ export default function Tool_2() {
     return (
         <>
             <Navbar />
-            <Lines />
             <br />
             <h3>Enter Some JSON: </h3>
             <br />
@@ -231,7 +229,6 @@ export default function Tool_2() {
                     : null
             }
             <br />
-            <Lines />
             <Footer />
         </>
     )
