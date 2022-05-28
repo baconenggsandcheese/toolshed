@@ -1,5 +1,5 @@
 import './Tool_2.css'
-import Lines from '../components/Lines'
+// import Lines from '../components/Lines'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
